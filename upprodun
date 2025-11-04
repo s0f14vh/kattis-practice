@@ -1,0 +1,45 @@
+#Solution for 
+using System;
+
+class Classrooms
+{
+    static void Main()
+    {
+        int classrooms, contestants, divisionDirecta, division;
+        classrooms = Convert.ToInt32(Console.ReadLine());
+        contestants = Convert.ToInt32(Console.ReadLine());
+        
+        divisionDirecta = contestants/classrooms;
+      
+        if (contestants%classrooms == 0)
+        {
+            for(int i = 1; i <= classrooms; i++)
+            {
+                for(int j = 1; j <= divisionDirecta; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }else
+        {
+			division = contestants/classrooms;
+			int resto = contestants%classrooms;
+			for(int i = 1; i <= classrooms; i++)
+            {
+				if(resto != 0)
+                    {
+						Console.Write("*");
+						resto--;
+					}
+                for(int j = 1; j <= division ; j++)
+                {
+                    Console.Write("*");
+                    
+                }
+                Console.WriteLine();
+            }
+		}
+
+    }
+}
