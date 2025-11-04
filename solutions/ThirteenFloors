@@ -1,0 +1,15 @@
+#Solution for https://open.kattis.com/problems/13floors
+using System;
+
+class ThirteenFloors
+{
+    static void Main()
+    {
+        int number = Convert.ToInt32(Console.ReadLine());
+        if(number >= 13)
+        {
+           number = number + 1; 
+        }
+         Console.WriteLine("{0}", number);
+    }
+}
