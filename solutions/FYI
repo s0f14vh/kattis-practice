@@ -1,0 +1,24 @@
+#Solution for https://open.kattis.com/problems/fyi
+using System;
+
+class Fyi
+{
+    static void Main()
+    {
+        int telephone, first3; 
+    
+        telephone = Convert.ToInt32(Console.ReadLine());
+
+        first3 = telephone/10000;
+        
+        if (1000000 <= telephone && telephone <= 9999999)
+        {
+            if (first3 == 555)
+            {
+                Console.WriteLine("1"); 
+            }else{
+                Console.WriteLine("0");
+            }
+        }
+    }
+}
