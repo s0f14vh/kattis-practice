@@ -1,0 +1,21 @@
+#Solution for https://open.kattis.com/problems/twostones
+using System;
+
+class TakwTwoStones
+{
+    static void Main()
+    {
+        int stone;
+        stone = Convert.ToInt32(Console.ReadLine());
+        
+        if (1 <= stone && stone <= 10000000)
+        {
+            if (stone % 2 == 0)
+            {
+                Console.WriteLine("Bob");
+            }else{
+                Console.WriteLine("Alice");
+            }
+        }
+    }
+}
