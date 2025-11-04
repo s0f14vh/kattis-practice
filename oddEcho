@@ -1,0 +1,21 @@
+#Solution for https://open.kattis.com/problems/oddecho
+using System;
+
+class OddEcho
+{
+    static void Main()
+    {
+        string [] palabra = new string [10];
+        int n;
+        n = Convert.ToInt32(Console.ReadLine());
+
+        for(int i = 0; i < n; i++)
+        {
+            palabra[i] = Console.ReadLine();
+        }
+        for(int i = 0; i < n; i = i +2)
+        {
+             Console.WriteLine("{0}", palabra[i]);
+        }
+    }
+}
