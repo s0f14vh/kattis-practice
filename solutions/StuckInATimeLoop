@@ -1,0 +1,16 @@
+#Solution for https://open.kattis.com/problems/timeloop
+using System;
+
+class StuckInATimeLoop
+{
+    static void Main()
+    {
+        int stone;
+        int number = Convert.ToInt32(Console.ReadLine());
+        
+       for (int i = 1; i <= number; i++)
+       {
+           Console.WriteLine("{0} Abracadabra", i);
+       }
+    }
+}
